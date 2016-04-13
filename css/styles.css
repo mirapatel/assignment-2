@@ -1,0 +1,22 @@
+body {
+	background-color: #ffffff;
+}
+
+nav {
+	background-color: #ed353c;
+}
+
+nav ul {
+	display: block;
+	color: #777777;
+	padding: 10px;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 1px;
+	padding: 4px 5px 0 5px;
+	border: 1px solid transparent;
+	word-spacing: normal;
+
+}
