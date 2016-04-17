@@ -1,11 +1,15 @@
 body {
 	background-color: #ffffff;
+<<<<<<< HEAD
 	width: 1366px;
 	height: 286px;
+=======
+>>>>>>> 19a5fa2dc0146332ffc3b5f946208f3f70cd5953
 }
 
 nav {
 	background-color: #ed353c;
+<<<<<<< HEAD
 	margin:0;
 }
 
@@ -75,3 +79,21 @@ footer ul:first-child {
 }
 
 
+=======
+}
+
+nav ul {
+	display: block;
+	color: #777777;
+	padding: 10px;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 1px;
+	padding: 4px 5px 0 5px;
+	border: 1px solid transparent;
+	word-spacing: normal;
+
+}
+>>>>>>> 19a5fa2dc0146332ffc3b5f946208f3f70cd5953
