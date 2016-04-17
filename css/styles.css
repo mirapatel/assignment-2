@@ -20,7 +20,7 @@ nav li {
 	list-style: none;
 	display: inline;
 	margin-left: 10px;
-	border-right: 1px solid black;
+	border-right: 2px solid black;
 	padding-right: 10px;
 }
 
@@ -35,13 +35,14 @@ nav li:last-child { /*nth-child(), nth-child()*/
 
 nav img {
 	vertical-align: middle;
-	margin-right: 430px;
+	margin-right: 340px;
 	margin-left: 0;
 	padding: 15px 0;
 }
 
-.nav-buttons:hover {
-		background-color: #ffffff;
+#nav-buttons:hover {
+		background-color: #e1f1f7;
+		text-decoration: underline;
 	}
 
 #main-box {
@@ -57,27 +58,28 @@ nav img {
 	height: 380px;
 }
 
-footer li
- {
+footer li {
 	list-style: none;
 	display:inline;
 }
 
-footer ul:first-child {
-	margin: 0 auto;
-	padding-top: 20px;
-/*	background-color: red;*/
-	width: 200px;
+footer img {
+	width: 30px;
+	height: 30px;
 }
+
+
+
+
 
 #triangle-nav {
 	padding: 0 10px;
 	position: absolute;
-	left: 750px;
+	left: 780px;
 }
 
-.service-photos ul,
-.service-photos li{
+.service-photos,
+.service-photos li {
 	list-style: none;
 	display:inline;
 	padding: 10px;
@@ -87,21 +89,55 @@ footer ul:first-child {
 .service-photos img {
 	width: 150px;
 	height: 130px;
-	margin-left:10px;
-	margin-right: 35px;
+	margin-left: 25px;
+	margin-right: 25px;
 	margin-top: 20px;
 }
 
 main section h2 {
-	font-family: 
+	padding-top: 10px;
+	font-family: sans-serif;
+	font-size: 30px;
+	text-align: center;
 }
 
-#services-words {
+main section p {
+	font-family: sans-serif;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+main section p a {
+	color: #ed353c;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.services-words li {
+	display: inline-block;
+	width: 149px;
 	list-style: none;
-	display:inline;
-	padding: 10px;
-
+	margin-left: 6px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #000000;
 }
+
+.services-words li:nth-of-type(1) {
+	padding: 10px 0
+}
+
+.services-words li:nth-of-type(2),
+.services-words li:nth-of-type(3),
+.services-words li:nth-of-type(4),
+.services-words li:nth-of-type(5), 
+.services-words li:nth-of-type(6) {
+	padding: 10px 0;
+	margin-left: 71px;
+}
+
+
 
 .slides {
     padding: 0;
@@ -175,3 +211,10 @@ input:checked + .slide-container  .slide {
 input:checked + .slide-container .nav label { 
     display: block; 
 }
+
+#nav-buttons {
+	text-decoration: none;
+	color: #000000;
+	font-size: 18px;
+}
+
