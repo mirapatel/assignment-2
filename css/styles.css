@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-	background-color: #ed353c;
+	background-color: #e1f1f7;
 	margin: 0;
 	margin-bottom: 20px;
 }
@@ -49,6 +49,7 @@ nav img {
 	margin-bottom: 45px;
 	height: 590px;
 	position: relative;
+	padding: 0;
 }
 
 #service-box {
@@ -75,14 +76,15 @@ footer ul:first-child {
 	left: 750px;
 }
 
-main section li {
+.service-photos ul,
+.service-photos li{
 	list-style: none;
 	display:inline;
 	padding: 10px;
 
 }
 
-#services-photos img {
+.service-photos img {
 	width: 150px;
 	height: 130px;
 	margin-left:10px;
@@ -92,4 +94,84 @@ main section li {
 
 main section h2 {
 	font-family: 
+}
 
+#services-words {
+	list-style: none;
+	display:inline;
+	padding: 10px;
+
+}
+
+.slides {
+    padding: 0;
+    width: 1366px;
+    height: 550px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides input { 
+    display: none; 
+}
+
+.slide-container { 
+    display: block; 
+
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 1366px;
+    height: 550px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #ed353c;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 550px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.nav label:hover { 
+    opacity: 1; 
+}
+
+.nav .next { 
+    right: 0; 
+}
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input:checked + .slide-container .nav label { 
+    display: block; 
+}

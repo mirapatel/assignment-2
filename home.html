@@ -24,26 +24,61 @@
 			<main>
 				<section>
 					<div id="main-box">
-					
-							<img src="img/home image1.jpg" style="width:1366px; height: 550px;">
-							<span id="triangle-nav"><img src="img/triangle.png" 
-							style="width:70px;height:40px;"></span> 
-						</div>
+						<ul class="slides">
+    						<input type="radio" name="radio-btn" id="img-1" checked/>
+    							<li class="slide-container">
+									<div class="slide">
+										<img src="img/home image1.jpg"/>
+										<span id="triangle-nav"><img src="img/triangle.png" 
+										style="width:70px;height:40px;"></span> 
+        							</div>
+									<div class="nav">
+										<label for="img-3" class="prev">&#x2039;</label>
+										<label for="img-2" class="next">&#x203a;</label>
+									</div>
+    							</li>
+    						<input type="radio" name="radio-btn" id="img-2"/>
+    							<li class="slide-container">
+       								 <div class="slide">
+         								 <img src="img/home image2.jpg"/>
+         								 <span id="triangle-nav"><img src="img/triangle.png" 
+										style="width:70px;height:40px;"></span> 
+        							</div>
+									<div class="nav">
+										<label for="img-1" class="prev">&#x2039;</label>
+										<label for="img-3" class="next">&#x203a;</label>
+									</div>
+    							</li>
+    						<input type="radio" name="radio-btn" id="img-3"/>
+    							<li class="slide-container">
+        							<div class="slide">
+          								<img src="img/home image3.jpg"/>
+          								<span id="triangle-nav"><img src="img/triangle.png" 
+										style="width:70px;height:40px;"></span> 
+        							</div>
+									<div class="nav">
+										<label for="img-2" class="prev">&#x2039;</label>
+										<label for="img-1" class="next">&#x203a;</label>
+									</div>
+    							</li>
+    					</ul>
+					</div>
 				</section>
 
 				<section>
 					<div id="service-box">
 					<div>
 						<h2>Types of Services</h2>
-						<p> Here at fly to the limit, we provide a various range of services; from viewing the peaceful <br> scenary to adrenline rushing experiences. Please have a look the services below and <b><a href="#">book</a></b> <br> your next adventure today!
+						<p> Here at fly to the limit, we provide a various range of services; from viewing the peaceful <br> scenary to adrenline rushing experiences. Please have a look the services below and <b><a href="#">book</a></b> <br> your next adventure today!</p>
 					</div>
-					<ul>
-						<li id="services-photos"><img src="img/home image1.jpg"></li>
-						<li id="services-photos"><img src="img/home image1.jpg"></li>
-						<li id="services-photos"><img src="img/home image1.jpg"></li>
-						<li id="services-photos"><img src="img/home image1.jpg"></li>
-						<li id="services-photos"><img src="img/home image1.jpg"></li>
-						<li id="services-photos"><img src="img/home image1.jpg"></li>
+					<div class="service-photos">
+					 <ul >
+						<li><img src="img/home image1.jpg"></li>
+						<li><img src="img/home image1.jpg"></li>
+						<li><img src="img/home image1.jpg"></li>
+						<li><img src="img/home image1.jpg"></li>
+						<li><img src="img/home image1.jpg"></li>
+						<li><img src="img/home image1.jpg"></li>
 					</ul>
 					<ul>
 						<li id="services-words">Scenic Flights</li>
@@ -53,6 +88,7 @@
 						<li id="services-words">X-Treme Rush</li>
 						<li id="services-words">Photo Trips</li>
 					</ul>
+					
 					</div>
 				</section>
 			</main>
