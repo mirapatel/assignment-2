@@ -1,5 +1,7 @@
 body {
 	background-color: #ffffff;
+	width: 1366px;
+	height: 286px;
 }
 
 nav {
@@ -36,14 +38,15 @@ nav img {
 	padding: 15px 0;
 }
 
-nav li a:hover {
-	background-color: #ffffff;
-}
+.nav-buttons:hover {
+		background-color: #ffffff;
+	}
 
 #main-box {
 	background-color: #e1f1f7;
-	height: 300px;
 	margin-bottom: 20px;
+	height: 560px;
+	position: relative;
 }
 
 #service-box {
@@ -62,6 +65,13 @@ footer ul:first-child {
 	padding-top: 20px;
 /*	background-color: red;*/
 	width: 200px;
+}
+
+#triangle-nav {
+	padding: 0 10px;
+	position: absolute;
+	left: 700px;
+
 }
 
 
