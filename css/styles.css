@@ -1,16 +1,14 @@
 body {
 	background-color: #ffffff;
-<<<<<<< HEAD
 	width: 1366px;
 	height: 286px;
-=======
->>>>>>> 19a5fa2dc0146332ffc3b5f946208f3f70cd5953
+	margin-top: 20px;
 }
 
 nav {
 	background-color: #ed353c;
-<<<<<<< HEAD
-	margin:0;
+	margin: 0;
+	margin-bottom: 20px;
 }
 
 nav ul {
@@ -20,7 +18,7 @@ nav ul {
 
 nav li {
 	list-style: none;
-	display:inline;
+	display: inline;
 	margin-left: 10px;
 	border-right: 1px solid black;
 	padding-right: 10px;
@@ -48,14 +46,14 @@ nav img {
 
 #main-box {
 	background-color: #e1f1f7;
-	margin-bottom: 20px;
-	height: 560px;
+	margin-bottom: 45px;
+	height: 590px;
 	position: relative;
 }
 
 #service-box {
 	background-color: #e1f1f7;
-	height: 300px;
+	height: 380px;
 }
 
 footer li
@@ -74,26 +72,24 @@ footer ul:first-child {
 #triangle-nav {
 	padding: 0 10px;
 	position: absolute;
-	left: 700px;
-
+	left: 750px;
 }
 
-
-=======
-}
-
-nav ul {
-	display: block;
-	color: #777777;
+main section li {
+	list-style: none;
+	display:inline;
 	padding: 10px;
-}
-
-nav li {
-	display: inline-block;
-	margin-right: 1px;
-	padding: 4px 5px 0 5px;
-	border: 1px solid transparent;
-	word-spacing: normal;
 
 }
->>>>>>> 19a5fa2dc0146332ffc3b5f946208f3f70cd5953
+
+#services-photos img {
+	width: 150px;
+	height: 130px;
+	margin-left:10px;
+	margin-right: 35px;
+	margin-top: 20px;
+}
+
+main section h2 {
+	font-family: 
+
