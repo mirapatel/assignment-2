@@ -5,6 +5,22 @@ body {
 	margin-top: 20px;
 }
 
+
+ @font-face {
+    font-family: paragraphText;
+    src: url(AvenirLTStd-Book.woff);
+ }
+
+ @font-face {
+ 	font-family: boldText;
+    src: url(AvenirLTStd-Black.woff);
+ }
+
+ @font-face {
+ 	font-family: restOfTheText;
+    src: url(Cordia-New-Bold.ttf);
+ }
+
 nav {
 	background-color: #e1f1f7;
 	margin: 0;
@@ -25,6 +41,7 @@ nav li {
 	border-right: 2px solid black;
 	padding-right: 10px;
 	line-height: 30px;
+	font-family: restOfTheText;
 }
 
 nav li:first-child { /*nth-child(), nth-child()*/
@@ -60,7 +77,7 @@ nav img {
 
 #service-box {
 	background-color: #e1f1f7;
-	height: 380px;
+	height: 385px;
 }
 
 footer ul{
@@ -96,34 +113,81 @@ footer li:first-child img {
 	list-style: none;
 	display:inline;
 	padding: 10px;
-
 }
 
 .service-photos img {
 	width: 150px;
 	height: 130px;
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 18.5px;
+	margin-right: 18.5x;
+	padding-left: 10px;
 	margin-top: 20px;
 	opacity: 0.4;
 }
 
-#scenic-flight:hover {
-	opacity: 0;
+.service-photos img:first-child {
+	padding-left: 14px;
+}
+
+#scenic-flights-words,
+#charter-trips-words,
+#remote-trips-words,
+#unique-routes-words,
+#xtreme-rush-words,
+#photo-trips-words {
+	display: block;
+	width: 130px;
+	list-style: none;
+	margin-left: 52px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #000000;
+	font-family: restOfTheText;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+#scenic-flights-box,
+#charter-trips-box,
+#remote-trips-box,
+#unique-routes-box,
+#xtreme-rush-box,
+#photo-trips-box {
+	display: inline-block;
+	float: left;
+}
+
+#scenic-flights-box:hover,
+#charter-trips-box:hover,
+#remote-trips-box:hover,
+#unique-routes-box:hover,
+#xtreme-rush-box:hover,
+#photo-trips-box:hover {
     cursor: pointer;
+    transform: scale(1.2);
+}
+
+#scenic-flights-box img:hover,
+#charter-trips-box img:hover,
+#remote-trips-box img:hover,
+#unique-routes-box img:hover,
+#xtreme-rush-box img:hover,
+#photo-trips-box img:hover {
+		opacity: 1;
 }
 
 main section h2 {
 	padding-top: 10px;
-	font-family: sans-serif;
-	font-size: 30px;
+	font-family: restOfTheText;
+	font-size: 38px;
 	text-align: center;
 }
 
 main section p {
-	font-family: sans-serif;
+	font-family: paragraphText;
 	font-size: 18px;
 	text-align: center;
+	margin-top: -15px;
 
 }
 
@@ -131,32 +195,8 @@ main section p a {
 	color: #ed353c;
 	text-decoration: none;
 	cursor: pointer;
+	font-family: boldText;
 }
-
-.services-words li {
-	display: inline-block;
-	width: 149px;
-	list-style: none;
-	margin-left: 6px;
-	text-align: center;
-	color: #ffffff;
-	background-color: #000000;
-}
-
-.services-words li:nth-of-type(1) {
-	padding: 10px 0
-}
-
-.services-words li:nth-of-type(2),
-.services-words li:nth-of-type(3),
-.services-words li:nth-of-type(4),
-.services-words li:nth-of-type(5), 
-.services-words li:nth-of-type(6) {
-	padding: 10px 0;
-	margin-left: 71px;
-}
-
-
 
 .slides {
     padding: 0;
@@ -173,7 +213,6 @@ main section p a {
 
 .slide-container { 
     display: block; 
-
 }
 
 .slide {
