@@ -1,7 +1,5 @@
 body {
 	background-color: #ffffff;
-	margin: 0 auto;
-	width: 1366px;
 	margin-top: 20px;
 }
 
@@ -24,13 +22,20 @@ body {
 nav {
 	background-color: #e1f1f7;
 	margin: 0;
+	width: 100%;
 	margin-bottom: 20px;
 
 }
 
 nav ul {
 	padding: 0 15px;
-	margin: 0 auto;
+	text-align: right;
+}
+
+nav ul:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
 
@@ -44,26 +49,38 @@ nav li {
 	font-family: restOfTheText;
 }
 
+
 nav li:first-child { /*nth-child(), nth-child()*/
-	margin-left: 0;
+	margin-left: 230px;
 	border: none;
+	float: left;
 }
 
 nav li:last-child { /*nth-child(), nth-child()*/
 	border: none;
+	margin-right: 250px;
 }
 
 nav img {
 	vertical-align: middle;
-	margin-right: 340px;
 	margin-left: 0;
 	padding: 15px 0;
+}
+
+nav li:not(:first-child) {
+	margin-top: 30px;
 }
 
 #nav-buttons:hover {
 		background-color: #e1f1f7;
 		text-decoration: underline;
 	}
+
+main {
+	width: 1366px;
+	margin: 0 auto;
+}
+
 
 #main-box {
 	background-color: #e1f1f7;
@@ -273,8 +290,22 @@ input:checked + .slide-container .nav label {
 #nav-buttons {
 	text-decoration: none;
 	color: #000000;
-	font-size: 18px;
+	font-size: 24px;
 }
 
->>>>>>> homecontent
->>>>>>> 94050165d72f1103a246b319db2eaa836b0f3b1d
+/*about us css*/
+
+ #main-box{
+	background-color: #e1f1f7;
+	margin-bottom: 45px;
+	height: 590px;
+	position: relative;
+	padding: 0;
+	width: 100%;
+}
+
+#triangle-nav-about {
+	padding: 0 10px;
+	position: absolute;
+	left: 840px;
+}
