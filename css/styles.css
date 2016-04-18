@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 	background-color: #ffffff;
 	width: 1366px;
@@ -240,3 +241,283 @@ nav li {
 	word-spacing: normal;
 
 }
+=======
+body {
+	background-color: #ffffff;
+	margin: 0 auto;
+	width: 1366px;
+	margin-top: 20px;
+}
+
+
+ @font-face {
+    font-family: paragraphText;
+    src: url(AvenirLTStd-Book.woff);
+ }
+
+ @font-face {
+ 	font-family: boldText;
+    src: url(AvenirLTStd-Black.woff);
+ }
+
+ @font-face {
+ 	font-family: restOfTheText;
+    src: url(Cordia-New-Bold.ttf);
+ }
+
+nav {
+	background-color: #e1f1f7;
+	margin: 0;
+	margin-bottom: 20px;
+
+}
+
+nav ul {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 10px;
+	border-right: 2px solid black;
+	padding-right: 10px;
+	line-height: 30px;
+	font-family: restOfTheText;
+}
+
+nav li:first-child { /*nth-child(), nth-child()*/
+	margin-left: 0;
+	border: none;
+}
+
+nav li:last-child { /*nth-child(), nth-child()*/
+	border: none;
+}
+
+nav img {
+	vertical-align: middle;
+	margin-right: 340px;
+	margin-left: 0;
+	padding: 15px 0;
+}
+
+#nav-buttons:hover {
+		background-color: #e1f1f7;
+		text-decoration: underline;
+	}
+
+#main-box {
+	background-color: #e1f1f7;
+	margin-bottom: 45px;
+	height: 590px;
+	position: relative;
+	padding: 0;
+	width: 100%;
+}
+
+
+#service-box {
+	background-color: #e1f1f7;
+	height: 385px;
+}
+
+footer ul{
+	margin: 0 auto;
+	width: 200px;
+	padding-top: 20px;
+	margin-bottom: 18px;
+
+}
+footer li {
+	list-style: none;
+	display:inline;
+}
+
+footer img {
+	width: 30px;
+	height: 30px;
+}
+
+footer li:first-child img {
+	width: 40px;
+	height: 30px;
+}
+
+#triangle-nav {
+	padding: 0 10px;
+	position: absolute;
+	left: 780px;
+}
+
+.service-photos,
+.service-photos li {
+	list-style: none;
+	display:inline;
+	padding: 10px;
+}
+
+.service-photos img {
+	width: 150px;
+	height: 130px;
+	margin-left: 18.5px;
+	margin-right: 18.5x;
+	padding-left: 10px;
+	margin-top: 20px;
+	opacity: 0.4;
+}
+
+.service-photos img:first-child {
+	padding-left: 14px;
+}
+
+#scenic-flights-words,
+#charter-trips-words,
+#remote-trips-words,
+#unique-routes-words,
+#xtreme-rush-words,
+#photo-trips-words {
+	display: block;
+	width: 130px;
+	list-style: none;
+	margin-left: 52px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #000000;
+	font-family: restOfTheText;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+#scenic-flights-box,
+#charter-trips-box,
+#remote-trips-box,
+#unique-routes-box,
+#xtreme-rush-box,
+#photo-trips-box {
+	display: inline-block;
+	float: left;
+}
+
+#scenic-flights-box:hover,
+#charter-trips-box:hover,
+#remote-trips-box:hover,
+#unique-routes-box:hover,
+#xtreme-rush-box:hover,
+#photo-trips-box:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#scenic-flights-box img:hover,
+#charter-trips-box img:hover,
+#remote-trips-box img:hover,
+#unique-routes-box img:hover,
+#xtreme-rush-box img:hover,
+#photo-trips-box img:hover {
+		opacity: 1;
+}
+
+main section h2 {
+	padding-top: 10px;
+	font-family: restOfTheText;
+	font-size: 38px;
+	text-align: center;
+}
+
+main section p {
+	font-family: paragraphText;
+	font-size: 18px;
+	text-align: center;
+	margin-top: -15px;
+
+}
+
+main section p a {
+	color: #ed353c;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: boldText;
+}
+
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 550px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides input { 
+    display: none; 
+}
+
+.slide-container { 
+    display: block; 
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 550px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #ed353c;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 550px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.nav label:hover { 
+    opacity: 1; 
+}
+
+.nav .next { 
+    right: 0; 
+}
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input:checked + .slide-container .nav label { 
+    display: block; 
+}
+
+#nav-buttons {
+	text-decoration: none;
+	color: #000000;
+	font-size: 18px;
+}
+
+>>>>>>> homecontent
