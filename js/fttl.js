@@ -49,7 +49,7 @@ function changeTab() {
 		break;
 
 		case "photo-trips-box":
-			allSections[4].style.display = "block";
+			allSections[5].style.display = "block";
 		break;
 	}
 }

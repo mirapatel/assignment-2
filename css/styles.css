@@ -309,3 +309,14 @@ input:checked + .slide-container .nav label {
 	position: absolute;
 	left: 840px;
 }
+boo
+/*flights css*/
+
+#hidden-tabs1,
+#hidden-tabs2,
+#hidden-tabs3,
+#hidden-tabs4,
+#hidden-tabs5,
+#hidden-tabs6 {
+	display: none;
+}
