@@ -1,6 +1,7 @@
 body {
 	background-color: #ffffff;
 	margin-top: 20px;
+	overflow: scroll;
 }
 
 
@@ -295,21 +296,12 @@ input:checked + .slide-container .nav label {
 
 /*about us css*/
 
- #main-box{
-	background-color: #e1f1f7;
-	margin-bottom: 45px;
-	height: 590px;
-	position: relative;
-	padding: 0;
-	width: 100%;
-}
-
 #triangle-nav-about {
 	padding: 0 10px;
 	position: absolute;
 	left: 840px;
 }
-boo
+
 /*flights css*/
 
 #hidden-tabs1,
@@ -320,3 +312,6 @@ boo
 #hidden-tabs6 {
 	display: none;
 }
+
+/*
+relative box and button is absolute position it*/
